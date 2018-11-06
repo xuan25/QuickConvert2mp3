@@ -1,0 +1,24 @@
+﻿<Window x:Class="QuickConvert2mp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickConvert2mp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="200" ResizeMode="NoResize" WindowStyle="None" Background="#FFF0F0F0" Opacity="0.8" AllowsTransparency="True">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" VerticalAlignment="Top" Width="200" MouseLeftButtonDown="AllowDrag" Background="#FFC8C8C8">
+            <Label Margin="0,0,0,0" Content="管理面板"></Label>
+            <Label x:Name="exit" Content="X" HorizontalAlignment="Left" Margin="174,0,0,0" VerticalAlignment="Top" MouseDown="exit_MouseDown"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="16" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="200" MouseLeftButtonDown="AllowDrag" MouseRightButtonUp="Grid_MouseRightButtonUp">
+            <Label x:Name="state" Margin="4,-6,0,0" Content="就绪(右键查看帮助)  Bulid1709201 by 瑄" FontSize="10"></Label>
+        </Grid>
+        <TextBox x:Name="rate" HorizontalAlignment="Left" Height="22" Margin="71,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Text="320" TextChanged="rate_TextChanged"/>
+        <Label Content="操作码率：" HorizontalAlignment="Left" Margin="6,25,0,0" VerticalAlignment="Top" Width="65" Height="25"/>
+        <TextBox x:Name="hotKey" HorizontalAlignment="Left" Height="22" Margin="160,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Text="X" TextChanged="hotKey_TextChanged"/>
+        <Label Content="快捷键：" HorizontalAlignment="Left" Margin="106,25,0,0" VerticalAlignment="Top" Width="54" Height="25"/>
+        <Button x:Name="add" Content="设定" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="75" Click="add_Click"/>
+        <Button x:Name="remove" Content="移除" HorizontalAlignment="Left" Margin="115,61,0,0" VerticalAlignment="Top" Width="75" Click="remove_Click"/>
+    </Grid>
+</Window>
